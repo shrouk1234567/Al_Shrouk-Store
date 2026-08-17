@@ -1,0 +1,277 @@
+/*======================= REVIEWS ==================*/
+
+.rate {
+    padding: 70px 5%;
+    background-color: #fdfaf6;
+}
+
+.rate-head {
+    padding-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.review-cards {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+
+    gap: clamp(18px, 2.4vw, 30px);
+
+    margin-top: 35px;
+}
+
+.review-card {
+    position: relative;
+
+    background-color: #ece1f4;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+
+    transition: 0.4s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(79, 54, 84, 0.18);
+}
+
+
+/* Quote icon */
+
+.review-card > i {
+    font-size: 25px;
+
+    color: #8b6689;
+
+    margin-bottom: 10px;
+}
+
+
+/* Review text */
+
+.review-card p {
+    color: #77687c;
+
+    line-height: 1.8;
+
+    margin: 10px 0 15px;
+}
+
+
+/* Rating */
+
+.rating {
+    color: #cba36b;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Customer name */
+
+.review-card span {
+    color: #4b304b;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+
+/*======================= FOOTER ==================*/
+
+.footer {
+    background-color: #4b304b;
+    color: #fdfaf6;
+
+    padding: 60px 5% 20px;
+
+    direction: rtl;
+}
+
+.footer-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr;
+
+    gap: 50px;
+}
+
+
+/*================ BRAND =================*/
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.footer-brand {
+    align-items: flex-start;
+}
+
+.footer-logo {
+    width: 130px;
+
+    object-fit: contain;
+
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.footer-box p {
+    color: #d9c7e8;
+
+    font-size: 14px;
+
+    margin: 5px 0 20px;
+}
+
+
+/*================ TITLES =================*/
+
+.footer-box h3 {
+    color: #fdfaf6;
+
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+/*================ LINKS =================*/
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.footer-links a {
+    color: #d9c7e8;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fdfaf6;
+
+    transform: translateX(-4px);
+}
+
+
+/*================ SOCIAL =================*/
+
+.footer-social {
+    display: flex;
+
+    gap: 10px;
+}
+
+.footer-social a {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #795279;
+
+    color: #fdfaf6;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    background-color: #d9c7e8;
+
+    color: #4b304b;
+
+    transform: translateY(-3px);
+}
+
+
+/*================ LINE =================*/
+
+.footer hr {
+    max-width: 1100px;
+
+    margin: 40px auto 20px;
+
+    border: none;
+
+    border-top: 1px solid rgba(217, 199, 232, 0.25);
+}
+
+
+/*================ COPYRIGHT =================*/
+
+.copyright {
+    text-align: center;
+
+    color: #cbb8d0;
+
+    font-size: 13px;
+}
+
+
+/*================ MOBILE =================*/
+
+@media (max-width: 700px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        text-align: center;
+    }
+
+    .footer-box,
+    .footer-brand {
+        align-items: center;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}

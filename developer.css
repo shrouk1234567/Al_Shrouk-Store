@@ -1,0 +1,649 @@
+/* =========================================
+   DEVELOPER SECTION
+========================================= */
+
+.developer {
+    position: relative;
+
+    padding: 90px 8% 50px;
+
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+
+    color: #4c2847;
+}
+
+
+/* =========================================
+   BACKGROUND OVERLAY
+========================================= */
+
+.developer::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(255, 250, 247, 0.45);
+
+    z-index: 0;
+}
+
+
+/* نخلي محتوى القسم فوق الـ overlay */
+
+.developer > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.developer > p:first-child {
+    text-align: center;
+
+    margin: 0;
+
+    font-size: 2.2rem;
+
+    color: #8f5387;
+
+    font-weight: 600;
+}
+
+
+.developer > p:nth-child(2) {
+
+    text-align: center;
+
+    margin: 5px 0 50px;
+
+    font-size: 2.3rem;
+
+    color: #4c2847;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.img-content {
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+/* Name */
+
+.content > p:first-child {
+
+    margin: 0 0 5px;
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    color: #4c2847;
+}
+
+
+/* Job */
+
+.content > p:nth-child(2) {
+
+    margin: 0 0 20px;
+
+    color: #8f5387;
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+}
+
+
+/* Short introduction */
+
+.content > p:nth-child(3) {
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+/* Description */
+
+.content > p:nth-child(4) {
+
+    color: #555;
+
+    line-height: 1.9;
+
+    font-size: 1rem;
+
+    margin-bottom: 25px;
+
+    max-width: 600px;
+}
+
+
+/* =========================================
+   DEVELOPER IMAGE
+========================================= */
+
+.image-charachter {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+}
+
+
+/* دائرة خلف الشخصية */
+
+.image-charachter::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 80%;
+
+    height: 80%;
+
+    background: #eee2f1;
+
+    border-radius: 50%;
+
+    z-index: 0;
+}
+
+
+/* الصورة */
+
+.image-charachter img {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    animation: img-animation  1s infinite alternate ;
+}
+
+
+@keyframes img-animation {
+    from{
+transform: translateY(10px);
+    }
+    to{
+transform: translateY(-10px);
+    }
+    
+}
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.skills {
+
+    width: 100%;
+
+    margin-top: 5px;
+}
+
+
+.skills > p {
+
+    font-size: 1.1rem;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+    color: #4c2847;
+}
+
+
+/* Skill pill */
+
+.skill {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 15px;
+
+    margin: 0 7px 10px 0;
+
+    border-radius: 30px;
+
+    background: #f4eaf5;
+
+    color: #4c2847;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Skill icons */
+
+.skill i {
+
+    font-size: 1.2rem;
+
+    color: #8f5387;
+}
+
+
+/* Skill hover */
+
+.skill:hover {
+
+    transform: translateY(-4px);
+
+    background: #4c2847;
+
+    color: #fff;
+
+    box-shadow: 0 8px 15px rgba(76, 40, 71, 0.2);
+}
+
+
+.skill:hover i {
+
+    color: #fff;
+}
+
+
+/* =========================================
+   CONTACT DEVELOPER
+========================================= */
+
+.contact-developer {
+
+    margin-top: 20px;
+}
+
+
+.contact-developer > p {
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+
+    color: #4c2847;
+}
+
+
+/* Social links */
+
+.social-links {
+
+    display: flex;
+
+    gap: 12px;
+}
+
+
+.social-links a {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #4c2847;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.social-links a:hover {
+
+    background: #8f5387;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 15px rgba(76, 40, 71, 0.2);
+}
+
+
+/* =========================================
+   FINAL MESSAGE
+========================================= */
+
+.foot-design {
+
+    max-width: 1100px;
+
+    margin: 70px auto 0;
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            135deg,
+            rgb(110, 73, 113),
+            rgb(222, 199, 222)
+        );
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(76, 40, 71, 0.12);
+}
+
+
+/* First sentence */
+
+.foot-design p:first-child {
+
+    margin: 5px;
+
+    color: #fff;
+
+    font-size: 1.8rem;
+
+    font-weight: 700;
+}
+
+
+/* Second sentence */
+
+.foot-design p:last-child {
+
+    margin: 5px;
+
+    color: #4c2847;
+
+    font-size: 1.8rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    .img-content {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px;
+    }
+
+
+    .content > p:first-child {
+
+        font-size: 1.7rem;
+    }
+
+
+    .content > p:nth-child(3) {
+
+        font-size: 1rem;
+    }
+
+
+    .image-charachter img {
+
+        max-width: 400px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .developer {
+
+        padding: 60px 20px 30px;
+
+        background-position: center;
+    }
+
+
+    /* Title */
+
+    .developer > p:first-child {
+
+        font-size: 1.6rem;
+    }
+
+
+    .developer > p:nth-child(2) {
+
+        font-size: 1.8rem;
+
+        margin-bottom: 30px;
+    }
+
+
+    /* Main layout */
+
+    .img-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    /* الصورة فوق */
+
+    .image-charachter {
+
+        order: -1;
+    }
+
+
+    .image-charachter img {
+
+        max-width: 350px;
+    }
+
+
+    /* Content */
+
+    .content {
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .content > p:first-child {
+
+        font-size: 1.7rem;
+    }
+
+
+    .content > p:nth-child(2) {
+
+        font-size: 1rem;
+    }
+
+
+    .content > p:nth-child(3) {
+
+        font-size: 1rem;
+
+        line-height: 1.7;
+    }
+
+
+    .content > p:nth-child(4) {
+
+        font-size: 0.95rem;
+
+        line-height: 1.8;
+    }
+
+
+    /* Skills */
+
+    .skills {
+
+        text-align: center;
+    }
+
+
+    .skill {
+
+        margin: 5px 3px;
+    }
+
+
+    /* Contact */
+
+    .contact-developer {
+
+        text-align: center;
+    }
+
+
+    .social-links {
+
+        justify-content: center;
+    }
+
+
+    /* Final message */
+
+    .foot-design {
+
+        margin-top: 45px;
+
+        padding: 30px 15px;
+
+        border-radius: 20px;
+    }
+
+
+    .foot-design p:first-child,
+    .foot-design p:last-child {
+
+        font-size: 1.3rem;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .developer > p:first-child {
+
+        font-size: 1.4rem;
+    }
+
+
+    .developer > p:nth-child(2) {
+
+        font-size: 1.6rem;
+    }
+
+
+    .image-charachter img {
+
+        max-width: 280px;
+    }
+
+
+    .skill {
+
+        font-size: 0.8rem;
+
+        padding: 8px 12px;
+    }
+
+
+    .foot-design p:first-child,
+    .foot-design p:last-child {
+
+        font-size: 1.1rem;
+    }
+
+}
