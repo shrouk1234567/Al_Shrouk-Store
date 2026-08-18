@@ -34,7 +34,7 @@
 }
 
 
-/* نخلي محتوى القسم فوق الـ overlay */
+/* content  */
 
 .developer > * {
     position: relative;
@@ -181,7 +181,7 @@
 }
 
 
-/* دائرة خلف الشخصية */
+/* circle behind charachter*/
 
 .image-charachter::before {
 
@@ -201,7 +201,7 @@
 }
 
 
-/* الصورة */
+/* image */
 
 .image-charachter img {
 
@@ -507,7 +507,7 @@ transform: translateY(-10px);
     }
 
 
-    /* الصورة فوق */
+    /* */
 
     .image-charachter {
 
